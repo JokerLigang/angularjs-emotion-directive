@@ -1,0 +1,12 @@
+<div class="emotion-container tab shadow ng-scope" ng-show="emotionshow">
+    <div class="tab-content current">
+        <ul class="emotions">
+            <li class="emotion ng-scope" ng-repeat="item in emotionGroup" >
+                <img    ng-click="getEmoTitle()"
+                        ng-src=emotion/{{item.src}}
+                        data-index={{item.index}} title={{item.title}} alt={{item.title}}
+                        >
+            </li>
+        </ul>
+    </div>
+</div>
